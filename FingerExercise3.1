@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jan 10 15:55:17 2019
+
+@author: ahmedeaali
+"""
+
+integerNumber = int(input("enter an integer"))
+root = 1
+pwr = 2
+ans = False
+while pwr < 6:
+    while root**pwr <= integerNumber:
+        if root**pwr == integerNumber:
+            print("root:",root,"pwr:",pwr)
+            ans = True
+        root += 1
+    pwr += 1
+    root = 1
+if not ans:
+    print("thw numbera can't be found")
+    
+        
+
